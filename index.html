@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+
+  <!-- RevealJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+
+  <!-- RevealJS Core -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>By: 22f2001699@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome stakeholders! This is the Q4 financial performance overview.
+        </aside>
+      </section>
+
+      <!-- Slide 2: Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+        ## Key Highlights
+        - Revenue Growth: **15%**
+        - Profit Margin: **12%**
+        - Market Share: **+3%**
+        </textarea>
+      </section>
+
+      <!-- Slide 3: Fragments (Animated) -->
+      <section>
+        <h2>Strategic Priorities</h2>
+        <ul>
+          <li class="fragment">Expand into new markets</li>
+          <li class="fragment fade-up">Enhance digital services</li>
+          <li class="fragment highlight-blue">Optimize costs</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4: Code Highlighting -->
+      <section>
+        <h2>Revenue Forecast Model</h2>
+        <pre><code class="python" data-trim data-line-numbers>
+import pandas as pd
+
+data = pd.read_csv("earnings.csv")
+data["growth"] = data["revenue"].pct_change()
+print(data.head())
+        </code></pre>
+        <aside class="notes">This Python script calculates revenue growth using Pandas.</aside>
+      </section>
+
+      <!-- Slide 5: Financial Math Formula -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Net Present Value (NPV):</p>
+        \[ NPV = \sum_{t=1}^{n} \frac{R_t}{(1+i)^t} - C_0 \]
+        <aside class="notes">NPV is used to evaluate investments.</aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+    });
+  </script>
+</body>
+</html>
